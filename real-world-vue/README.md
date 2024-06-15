@@ -1,14 +1,10 @@
-# real-world-vue
+# Vue Lab, Part 2: Real world vue
 
-This template should help get you started developing with Vue 3 in Vite.
+##  Topics
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Vue Router Essentials
+- API Calls with axios
+- Dynamic routing
 
 ## Project Setup
 

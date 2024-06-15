@@ -1,6 +1,6 @@
-# vue-lab
+# Vue Lab, Part 1: Intro to Vue.js
 
-## Topics
+##  Topics
 
 - Attribute binding
 - Conditional rendering
