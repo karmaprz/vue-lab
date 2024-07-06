@@ -1,5 +1,5 @@
 <script setup>
-import {defineProps} from 'vue'
+import { defineProps } from 'vue'
 
 defineProps({
   event: {
@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <RouterLink :to="{ name: 'event-details', params: { id: event.id }}">
+  <RouterLink :to="{ name: 'event-details', params: { id: event.id } }">
     <div class="event-card">
       <h2>{{ event.title }}</h2>
       <span>@{{ event.time }} on {{ event.date }}</span>
@@ -19,7 +19,6 @@ defineProps({
 </template>
 
 <style scoped>
-
 .event-card {
   padding: 20px;
   width: 250px;
@@ -36,5 +35,4 @@ defineProps({
   color: #2c3e50;
   text-decoration: none;
 }
-
 </style>

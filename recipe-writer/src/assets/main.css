@@ -1,0 +1,15 @@
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body {
+  background-color: #161616;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+a {
+  color: white;
+}
