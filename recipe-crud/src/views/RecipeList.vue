@@ -6,20 +6,28 @@ import RecipeService from '@/services/RecipeService'
 const recipes = ref(null)
 const error = ref(null) 
 
-
-onMounted(() => {
+const fetchRecipes = () => {
     RecipeService.getRecipes()
     .then(res => recipes.value = res.data)
     .catch(err => error.value = err.message || 'Failed to fetch recipes')
-})
+}
 
+const deleteRecipe = async (id) => {
+    await RecipeService.deleteRecipe(id)
+    .then(recipes.value = recipes.value.filter(recipe => recipe.id !== id))
+    .catch(err => error.value = err.message || 'Failed to delete recipe')
+}
+
+onMounted(() => {
+    fetchRecipes()
+})
 
 </script>
 
 <template>
     <div v-if="error" class="error">{{ error }}</div>
     <section class="recipes-wrapper">
-        <RecipeItem v-for="recipe in recipes" :key="recipe.id" :recipe="recipe"/>
+        <RecipeItem v-for="recipe in recipes" :key="recipe.id" :recipe="recipe" @delete-recipe="deleteRecipe"/>
     </section>
 </template>
 

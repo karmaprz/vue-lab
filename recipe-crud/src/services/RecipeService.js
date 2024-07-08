@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-  baseURL: 'https://my-json-server.typicode.com/karmaprz/vue-lab',
+  baseURL: 'http://localhost:3000',
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -33,7 +33,10 @@ export default {
   getRecipes() {
     return apiClient.get('/recipes')
   },
-  getRecipe(id) {
-    return apiClient.get(`/recipes/${id}`)
+  // getRecipe(id) {
+  //   return apiClient.get(`/recipes/${id}`)
+  // }
+  deleteRecipe(id) {
+    return apiClient.delete(`/recipes/${id}`)
   }
 }

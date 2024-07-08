@@ -1,12 +1,17 @@
 <script setup>
-import { defineProps } from 'vue'
-
 defineProps({
   recipe: {
     type: Object,
     required: true
   }
 })
+
+const emit = defineEmits(['delete-recipe']);
+
+const handleDelete = (id, title) => {
+  const deleteRecipe = window.confirm(`Are you sure you want to delete ${title} recipe?`)
+  deleteRecipe && emit('delete-recipe', id)
+}
 
 </script>
 
@@ -15,7 +20,7 @@ defineProps({
       <h2>{{ recipe.title }}</h2>
       <p>Hearty lentil soup with carrots, celery, and spices, perfect for a cozy meal.</p>
       <span class="buttons-wrapper">
-        <button>Delete recipe</button> | 
+        <button @click="handleDelete(recipe.id, recipe.title)">Delete recipe</button> | 
         <button>Edit recipe</button>
       </span>
   </div>
