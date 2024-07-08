@@ -1,18 +1,37 @@
 {
-    "recipes": [
-      {
-        "id": 1,
-        "title": "Recipe 1"
-      },
-      {
-        "id": 2,
-        "title": "Recipe 2"
-      },
-      {
-        "id": 3,
-        "title": "Recipe 3"
-      }
-    ],
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Vegan Tacos",
+      "description": "Delicious vegan tacos made with spiced chickpeas, fresh veggies, and avocado."
+    },
+    {
+      "id": 2,
+      "title": "Quinoa Salad",
+      "description": "A refreshing quinoa salad with cucumber, tomato, mint, and a lemon vinaigrette."
+    },
+    {
+      "id": 3,
+      "title": "Lentil Soup",
+      "description": "Hearty lentil soup with carrots, celery, and spices, perfect for a cozy meal."
+    },
+    {
+      "id": 4,
+      "title": "Vegan Pizza",
+      "description": "A crispy crust topped with tomato sauce, dairy-free cheese, and fresh basil."
+    },
+    {
+      "id": 5,
+      "title": "Stuffed Bell Peppers",
+      "description": "Bell peppers stuffed with a savory mix of rice, black beans, and vegetables."
+    },
+    {
+      "id": 6,
+      "title": "Vegan Brownies",
+      "description": "Rich and fudgy vegan brownies made with cocoa and dairy-free chocolate chips."
+    }
+  ],
+  
     "comments": [
       {
         "id": 1,
