@@ -6,7 +6,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/">Recipes</RouterLink>
+        <RouterLink to="/add-recipe">Add a new recipe</RouterLink>
       </nav>
     </div>
   </header>
@@ -17,10 +18,12 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   padding: 30px 0;
   align-self: center;
+  width: 100%;
 }
 
 nav {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  column-gap: 20px;
 }
 </style>

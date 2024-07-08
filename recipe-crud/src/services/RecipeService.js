@@ -38,5 +38,8 @@ export default {
   // }
   deleteRecipe(id) {
     return apiClient.delete(`/recipes/${id}`)
+  },
+  createRecipe(recipe) {
+    return apiClient.post('/recipes', recipe)
   }
 }
